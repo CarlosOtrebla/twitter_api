@@ -18,7 +18,7 @@ public class MensagemService {
 
 		Mensagem m = new Mensagem();
 		m.setMensagem(mensagem.getMensagem());
-		m.setUsuario(mensagem.getUsuario());
+		m.setNomeUsuario(mensagem.getNomeUsuario());
 		
 		repository.save(m);
 		return new Mensagem(m);
